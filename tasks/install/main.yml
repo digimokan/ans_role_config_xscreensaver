@@ -1,0 +1,7 @@
+- name: "Install the 'xscreensaver' application package"
+  ansible.builtin.package:
+    name: xscreensaver
+    state: present
+  become: true
+  become_user: root
+
