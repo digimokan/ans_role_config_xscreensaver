@@ -1,0 +1,6 @@
+# command to start xscreensaver utility
+xscreensaver_start_cmd: "xscreensaver"
+
+# main .xscreensaver config file path
+xscreensaver_config_file_path: "/home/{{ xscreensaver_user_name }}/.xscreensaver"
+

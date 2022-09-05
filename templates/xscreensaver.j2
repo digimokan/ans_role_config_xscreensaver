@@ -1,0 +1,27 @@
+# vim: set filetype=config:
+# ANSIBLE-MANAGED CONFIGURATION FILE
+# Upstream config source:
+#   https://www.jwz.org/xscreensaver/man1.html
+# Tuning config:
+#   Run xscreensaver-settings GUI, which saves changes to the config file
+
+# SCREENSAVER, SCREEN-LOCKING, AND SCREEN-BLANKING
+timeout:      0:00:{{ "%02d" | format(screensaver_timeout_minutes) }}
+mode:         {{ 'blank' if screensaver_show_blank_screen else 'random' }}
+cycle:        0:00:{{ "%02d" | format(screensaver_change_time_minutes) }}
+lock:         {{ 'True' if screensaver_screen_lock_enable else 'False' }}
+lockTimeout:  0:00:{{ "%02d" | format(screen_saver_lock_after_start_minutes) }}
+fade:         {{ 'False' if (screensaver_fade_in_seconds == 0) else 'True' }}
+fadeSeconds:  0:00:{{ "%02d" | format(screensaver_fade_in_seconds) }}
+unfade:       {{ 'True' if screensaver_fade_out_when_fading_in else 'False' }}
+
+# MONITOR POWER
+dpmsEnabled:  {{ 'True' if monitor_turn_power_off else 'False' }}
+dpmsQuickOff: True
+dpmsStandby:  0:00:{{ "%02d" | format(monitor_turn_power_off_minutes) }}
+dpmsSuspend:  0:00:{{ "%02d" | format(monitor_turn_power_off_minutes) }}
+dpmsOff:      0:00:{{ "%02d" | format(monitor_turn_power_off_minutes) }}
+
+# MISC
+splash:       False
+
