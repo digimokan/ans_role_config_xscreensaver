@@ -1,6 +1,9 @@
 # command to start xscreensaver utility
 xscreensaver_start_cmd: "xscreensaver"
 
+# command to lock screen (sends signal to utility running in background)
+xscreensaver_lock_cmd: "xscreensaver-command -lock"
+
 # main .xscreensaver config file path
 xscreensaver_config_file_path: "/home/{{ xscreensaver_user_name }}/.xscreensaver"
 
