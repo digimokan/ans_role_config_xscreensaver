@@ -16,7 +16,7 @@ Install and configure xscreensaver.
 
 ## Purpose
 
-* Install and configure the [xscreensaver](https://www.jwz.org/xscreensaver/)
+* Install and configure the [xscreensaver](https://www.jwz.org/xscreensaver/).
 * Show a screensaver or a blank screen after a timeout.
 * Lock the screen after a timeout.
 * Power-off the monitor after a timeout.
