@@ -56,7 +56,7 @@ Install and configure xscreensaver.
        - name: "Install and configure xscreensaver"
          ansible.builtin.include_role:
            name: ans_role_config_xscreensaver
-           public: yes
+           public: true
    ```
 
 ## Role Options
